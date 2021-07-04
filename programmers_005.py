@@ -1,10 +1,7 @@
-# 나누어 떨어지는 숫자 배열
-def solution(arr, divisor):
-    answer = []
-    for i in arr:
-        if i % divisor == 0:
-            answer.append(i)
-    if len(answer) == 0:
-        answer.append(-1)
-    answer.sort()
+# 두 정수 사이의 합
+def solution(a, b):
+    if a >= b:
+        answer = sum(range(b,a+1))
+    else: 
+        answer = sum(range(a,b+1))
     return answer
