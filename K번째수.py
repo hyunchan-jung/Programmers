@@ -1,4 +1,3 @@
-# K¹øÂ° ¼ö
 def solution(array, commands):
     answer = []
     for command in commands:
