@@ -1,6 +1,6 @@
 def solution(array, commands):
     answer = []
-    for command in commands:
+    for command in commands: # i번째 부터 j번째까지 중에서 k번째수
         i = command[0]
         j = command[1]
         k = command[2]
