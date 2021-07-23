@@ -8,7 +8,7 @@ def solution(answers):
         cnt = 0
         for j,k in enumerate(answers):
             if j >= len(i): j %= len(i)  # 정답찍기 순환
-            if i[j] == k:  # 맞추면 카운트증가
+            if i[j] == k:  # 맞추면 카운트증가 
                 cnt += 1
         A.append(cnt)
     if A.count(max(A)) == 1:
