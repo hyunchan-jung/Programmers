@@ -7,7 +7,7 @@ def solution(n, lost, reserve):
             lost.remove(i)
             reserve.remove(i)
     L = lost.copy()
-    for i in L: # 앞번호 부터 빌려보고, 없으면 뒷번호 탐색
+    for i in L: # 앞번호 부터 빌려보고, 없으면 뒷번호 탐색 
         if i-1 in reserve:
             lost.remove(i)
             reserve.remove(i-1)
