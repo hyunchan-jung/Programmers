@@ -1,7 +1,7 @@
 def solution(board, moves):
     stack = [] # 우측에 옮겨지는 블록들
     cnt = 0    # 터지는 횟수
-    for col in moves:    # 이동위치(열)
+    for col in moves:    # 이동위치(열) 
         for i in range(len(board)):    # 블럭이 있는 위치를 찾음
             if board[i][col-1] != 0:
                 stack.append(board[i][col-1])
